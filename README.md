@@ -1,2 +1,2 @@
 # My Portfolio Website
-<a href="https://www.arsalan-bashir.github.io"> VISIT </a>
+<a href="https://arsalan-bashir.github.io"> VISIT </a>
