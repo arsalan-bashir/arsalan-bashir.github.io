@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+
+@import url("https://www.fontshare.com/fonts/ranade");
+
+@font-face {
+    font-family: 'Ranade';
+    src: url('fonts/Ranade-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ranade-Thin';
+    src: url('fonts/Ranade-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+:root {
+  --blue: #1e549f;
+  --indigo: #695aa6;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #ec185d;
+  --orange: #ff6d02;
+  --yellow: #ffc107;
+  --green: #1bb74f;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #393e46;
+  --primary: #695aa6;
+  --secondary: #393e46;
+  --success: #1bb74f;
+  --info: #17a2b8;
+  --warning: #ff6d02;
+  --danger: #ec185d;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Open Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+  font-family: Ranade-Thin;
+}
+
+
+h1 {
+    font-family: Ranade;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 5px;
+    height: 15px;
+}
+
+.resume-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+    bottom:40px;
+    border: 1px solid rgb(131, 131, 238);
+    border-radius: 10px;
+    width:max-content;
+    max-width: 60vw;
+    min-width:59vw;
+    min-height: 100vh;
+    padding-bottom: 10px;
+    transform: scale(0.8);
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* For small screens (mobile devices) */
+@media screen and (max-width: 600px) {
+  .resume-container {
+    max-width: 900px;
+    margin-left: -100px;
+  }
+
+  
+}
+
+/* For medium screens (tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .resume-container {
+    min-width: 900px;
+  }
+}
+
+/* For large screens (desktops) */
+@media screen and (min-width: 1025px) {
+  .resume-container {
+    min-width: 900px;
+  }
+}
+
+
+.sec-head {
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading-row a {
+    text-decoration: none;
+    color:black;
+}
+
+.heading-row .ph {
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    padding:0 15px;
+
+}
+
+.heading-row {
+    display: flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-evenly;
+}
+
+.heading-links a{
+    padding:0 10px;
+}
+
+.heading-links a:first-child{
+    border-right:2px solid #054c98;
+}
+
+.heading-links a{
+    text-decoration: none;
+    font-weight: 900;
+    color:#054c98;
+}
+
+.heading-links a:hover{
+    text-decoration: underline;
+}
+
+.title {
+    text-align: left;
+    border-bottom: 1.5px solid #5a5858;
+}
+
+.education, .experience, .skills, .projects, .certifications{
+    display: flex;
+    flex-direction: column;
+    width:85%;
+    margin: 0 auto;
+    text-align: center;
+}
+.edu-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+    
+}
+
+
+.label-1, .label-3 {
+    font-size:14px;
+    margin-top:0;
+    margin-left:10px;
+    text-align: left;
+    width: 130%;
+}
+
+.label-2, .label-4 {
+    font-size:14px;
+    margin-top:0;
+    margin-right:10px;
+    text-align: right;
+}
+
+
+.subtitle {
+    font-size:16px;
+    margin-top:0;
+    margin-bottom: 10px;
+    margin-left:5px;
+    text-align: left;
+}
+.exp-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exp-title p {
+    margin: 0;
+    font-size: small;
+}
+
+.points {
+    text-align: left;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.points li {
+    padding-bottom: 8px;
+}
+
+.skill-row{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    text-align: left;
+    align-items: center;
+    line-height: 0.2;
+}
+
+.skill-row p:nth-child(odd) {
+    font-size:14px;
+    margin-left:10px;
+    column-width: 30%;
+    text-align: left;
+}
+
+.skill-row:nth-child(even) {
+    font-size:14px;
+    margin-right:10px;
+    text-align: left;
+}
+
+.fa-github:hover{
+    color:#09fbb7 !important;
+    transition: 1s ease-in-out;
+}
+
+.cer-row{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-align: left;
+}
+
+.item {
+    display: flex;
+    gap:40px;
+    position: absolute;
+    left:40%;
+    width:max-content;
+    margin-top:1px;
+    top:50px;
+    
+}
+
+.item a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+
+.item a:first-child {
+    border: 1px solid var(--purple);
+}
+
+.item a:last-child {
+    color:var(--green);
+    border: 1px solid var(--green);
+}
+
+.item a:first-child:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: 2px 2px var(--green);
+}
+
+.item a:last-child:hover {
+    background-color: var(--green);
+    color: var(--white);
+    box-shadow: 2px 2px var(--purple);
+}
