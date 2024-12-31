@@ -89,7 +89,6 @@ h1 {
     width:max-content;
     max-width: 60vw;
     min-width:59vw;
-    min-height: 100vh;
     padding-bottom: 10px;
     transform: scale(0.8);
     opacity: 1;
