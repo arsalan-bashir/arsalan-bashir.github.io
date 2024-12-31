@@ -1,4 +1,4 @@
-// smooth scroll
+// Smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
 
@@ -17,15 +17,35 @@ $(document).ready(function(){
     });
 });
 
+
 // navbar toggle
 $('#nav-toggle').click(function(){
     $(this).toggleClass('is-active')
     $('ul.nav').toggleClass('show');
 });
 
+
+// Date and time
+function updateDate() {
+  const parts = new Date().toString().split(" ");
+  var day = parts[0];
+  if (day === "Sat" || day === "Sun") {
+    day = `<span style="font-weight: bold;color:red;">${day}</span>`;
+  }else if (day === "Fri") {
+    day = `<span style="font-weight: bold;color:green;">${day}</span>`;
+  } else {
+    day = `<span style="font-weight: bold;">${day}</span>`;
+  }
+  const rest = parts.splice(1, 4).join(" ");
+  document.getElementById("current-date").innerHTML = `${day} ${rest}`;
+}
+setInterval(updateDate, 1000);
+updateDate();
+
 document.querySelector('.logo').innerHTML = document.querySelector('.logo').innerText.split('').map(function(letter) {
   return '<span>' + letter + '</span>';
 }).join('');
+
 
 
 (function() {
