@@ -11133,6 +11133,7 @@ p {
   position: absolute;
   padding-right: 10px;
   bottom: -100%;
+  text-align: center;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all, 0.3s;
@@ -11150,7 +11151,7 @@ p {
 }
 
 .project-card:hover .subtitle {
-  bottom: 20px;
+  bottom: 5px;
   opacity: 1;
   visibility: visible;
 }
