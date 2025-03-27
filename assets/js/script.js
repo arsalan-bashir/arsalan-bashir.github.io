@@ -148,3 +148,19 @@ document.querySelector('.logo').innerHTML = document.querySelector('.logo').inne
     }
   })();
   
+
+const joke = document.getElementById('joke-box');
+joke.textContent = 'Loading...';
+
+fetch('https://icanhazdadjoke.com/', {
+  headers: {
+    'Accept': 'application/json',
+  },
+})
+  .then(response => response.json())
+  .then(data => {
+    joke.textContent = data.joke;
+  })
+  .catch(error => {
+    joke.textContent = 'Joke is on you! There was an error.';
+  });
