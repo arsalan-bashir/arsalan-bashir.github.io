@@ -12015,6 +12015,8 @@ pre .code {
 .about-img-holder .about-img {
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px 40% 10px 30%;
+
 }
 
 .about-caption {
